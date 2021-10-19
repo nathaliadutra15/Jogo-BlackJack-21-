@@ -68,6 +68,8 @@ public class baralho {
                                 valor = 1;
                             } if (this.pontuacaoAtual < 11){
                                 valor = 11;
+                            } else {
+                                valor = 1;
                             }
                             break;
                         case "DOIS":
@@ -128,10 +130,14 @@ public class baralho {
         } if (jogador2 == 21) {
             return "Parabéns, jogador 2 venceu!!";
         } else {
+            if (jogador1 == 21 && jogador2 == 21) {
+                return "Parabéns, os dois venceram! Que tal jogarem mais uma partida?!";
+            }
             if (jogador1 < jogador2) {
                 return "Parabéns, jogador 1 venceu!!";
-            }
-            return "Parabéns, jogador 2 venceu!!";
+            } else {
+                return "Parabéns, jogador 2 venceu!!";
+            } 
         }
         
 

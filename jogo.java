@@ -26,8 +26,8 @@ public class jogo {
             System.out.println("Legal! Agora escolha o nível de dificuldade: ");
             System.out.println("==============================================");
             System.out.println("[1] Fácil - 1 Baralho");
-            System.out.println("[2] Médio - 5 Baralhos");
-            System.out.println("[3] Difícil - 10 Baralhos");
+            System.out.println("[2] Médio - 3 Baralhos");
+            System.out.println("[3] Difícil - 8 Baralhos");
             System.out.println("[4] Personalizar quantidade");
             respostaDificuldade = entrada.nextInt();
         } while (respostaDificuldade <= 0 || respostaDificuldade >= 5);
@@ -74,12 +74,11 @@ public class jogo {
                     } else {
                         System.out.println("Deseja pegar mais uma carta? [1] SIM | [2] NÃO ");
                         respostaCarta = entrada.nextInt();
-                        if (respostaCarta != 1) {
-                            System.out.println("===========================================================");
-                            System.out.println("Sua pontuação foi: " + b.pontuacaoAtual);
-                            jogador1 = b.pontuacaoAtual;
-                        }
                     }
+
+                    System.out.println("===========================================================");
+                    System.out.println("Pontuação do JOGADOR 1 foi: " + b.pontuacaoAtual);
+                    jogador1 = b.pontuacaoAtual;
                 }
 
                 System.out.println("===========================================================");
